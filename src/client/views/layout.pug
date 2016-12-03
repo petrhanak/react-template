@@ -1,0 +1,10 @@
+doctype html
+html
+    head
+        title
+        each filename in css
+            link(rel="stylesheet" href=filename)
+    body
+        #app!=component
+        each filename in js
+            script(type="text/javascript" src=filename)

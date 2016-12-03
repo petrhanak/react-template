@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "@strv/javascript/environments/nodejs/v6",
+    "@strv/javascript/environments/nodejs/optional",
+    "@strv/javascript/environments/react/v15",
+    "@strv/javascript/environments/react/optional",
+    "@strv/javascript/coding-styles/recommended"
+  ],
+  "env": {
+    "commonjs": true
+  }
+}

@@ -3,7 +3,6 @@
   "scripts": {
     "build": "webpack --config webpack/prod.config.js",
     "lint": "eslint src --ext jsx,js",
-    "postinstall": "npm run build",
     "start": "node index.js",
     "test": "echo 'no tests yet'"
   },

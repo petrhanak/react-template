@@ -6,6 +6,9 @@ node_js:
 script:
   - npm run build
 
+before_deploy:
+  - rm -rf node_modules
+
 deploy:
   provider: heroku
   api_key:

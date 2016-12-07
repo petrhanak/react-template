@@ -9,7 +9,7 @@ module.exports = {
     rules: [
       {
         test: /\.jsx?$/,
-        exclude: 'node_modules',
+        exclude: /node_modules/,
         use: [
           {
             loader: 'babel-loader',
@@ -22,6 +22,9 @@ module.exports = {
                   }
                 }],
                 "stage-0"
+              ],
+              plugins: [
+                "typecheck"
               ]
             }
           }
@@ -29,12 +32,12 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        exclude: 'node_modules',
+        exclude: /node_modules/,
         loader: 'style-loader!css-loader?modules'
       },
       {
         test: /\.(jpeg|jpg|png|svg)$/,
-        exclude: 'node_modules',
+        exclude: /node_modules/,
         loader: 'url-loader?limit=10000'
       }
     ]

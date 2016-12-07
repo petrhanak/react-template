@@ -7,7 +7,7 @@ module.exports = {
     rules: [
       {
         test: /\.jsx?$/,
-        exclude: 'node_modules',
+        exclude: /node_modules/,
         use: [
           {
             loader: 'babel-loader',
@@ -20,6 +20,9 @@ module.exports = {
                   }
                 }],
                 "stage-0"
+              ],
+              plugins: [
+                "typecheck"
               ]
             }
           }
@@ -27,17 +30,17 @@ module.exports = {
       },
       {
         test: /\.pug$/,
-        exclude: 'node_modules',
+        exclude: /node_modules/,
         loader: 'pug-loader'
       },
       {
         test: /\.css$/,
-        exclude: 'node_modules',
+        exclude: /node_modules/,
         loader: 'css-loader/locals?modules'
       },
       {
         test: /\.(jpeg|jpg|png|svg)$/,
-        exclude: 'node_modules',
+        exclude: /node_modules/,
         loader: 'url-loader?limit=10000&emitFile=false'
       }
     ]

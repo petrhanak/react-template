@@ -18,6 +18,7 @@
     "@strv/eslint-config-javascript": "^6.1.0",
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.7",
+    "babel-plugin-typecheck": "^3.9.0",
     "babel-preset-latest": "^6.16.0",
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-0": "^6.16.0",

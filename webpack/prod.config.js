@@ -12,7 +12,7 @@ const client = {
     rules: [
       {
         test: /\.jsx?$/,
-        exclude: 'node_modules',
+        exclude: /node_modules/,
         use: [
           {
             loader: 'babel-loader',
@@ -32,7 +32,7 @@ const client = {
       },
       {
         test: /\.css$/,
-        exclude: 'node_modules',
+        exclude: /node_modules/,
         loader: ExtractTextPlugin.extract({
           fallbackLoader: 'style-loader',
           loader: 'css-loader?modules'
@@ -40,7 +40,7 @@ const client = {
       },
       {
         test: /\.(jpeg|jpg|png|svg)$/,
-        exclude: 'node_modules',
+        exclude: /node_modules/,
         loader: 'url-loader?limit=10000'
       }
     ]

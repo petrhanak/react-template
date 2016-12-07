@@ -42,6 +42,7 @@ module.exports = {
       }
     ]
   },
+  devtool: "source-map",
   target: 'node',
   entry: [
     path.resolve(__dirname, '..', 'src', 'index.jsx'),

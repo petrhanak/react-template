@@ -53,7 +53,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, '..', 'build'),
     filename: 'app.js',
-    libraryTarget: 'commonjs2'
+    libraryTarget: 'commonjs2',
+    publicPath: '/'
   },
   externals: [nodeExternals()],
   node: {
